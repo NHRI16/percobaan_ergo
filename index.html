@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1b2428">
+  <meta name="description" content="Jadilah konsultan ergonomi. Pelajari kontrol lewat tutorial, tata rumah, dan jelajahi halaman dalam simulasi 3D ErgoFlip.">
+  <title>ErgoFlip — Ruang lebih baik. Hidup lebih nyaman.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b2428'/%3E%3Cpath d='M18 16h30v8H26v6h18v8H26v10h-8z' fill='%23d6ed9a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="simulation.css">
+  <script type="importmap">{"imports":{"three":"/node_modules/three/build/three.module.js","three/addons/":"/node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <div id="viewport" aria-label="Ruangan 3D interaktif"></div>
+  <div id="loading"><div class="loading-mark">e<span>f</span></div><h2>Ruang lebih baik.<br>Hidup lebih nyaman.</h2><p id="loading-text">Menyiapkan ruang pertama Anda…</p><div class="loading-track"><i></i></div></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="ErgoFlip beranda"><span class="brand-mark" data-icon="brand"></span><span>ergo<span class="brand-light">flip</span><small>THE ERGONOMICS SIMULATOR</small></span></a>
+    <div class="location"><span class="location-icon" data-icon="office"></span><span>PROYEK <b id="header-number">01</b><em>/</em><strong id="header-room">Kantor Fokus</strong></span><span class="live-dot"></span><small>SIMULASI AKTIF</small></div>
+    <div class="header-actions"><span class="xp-balance"><i data-icon="spark"></i><b id="xp">0</b><small>XP</small></span><span class="header-divider"></span><button id="sound-button" class="icon-button" aria-label="Aktifkan suara" title="Suara"><i data-icon="volume-off"></i></button><button id="settings-button" class="icon-button" aria-label="Pengaturan" title="Pengaturan"><i data-icon="settings"></i></button><span class="avatar" title="Konsultan ergonomi">K</span></div>
+  </header>
+  <main id="hud">
+    <aside id="mission-panel" class="panel mission-panel">
+      <div class="eyebrow"><span class="live-dot"></span> PROYEK AKTIF <span id="project-count">01 / 05</span></div>
+      <h1 id="mission-title">Ruang kerja,<br>lebih baik.</h1>
+      <p id="mission-description" class="muted intro">Ubah kantor ini menjadi ruang yang mendukung tubuh dan produktivitas.</p>
+      <div class="mission-progress-label"><span>Progres misi</span><b id="mission-count">0 / 5</b></div><div class="progress-track"><i id="mission-progress"></i></div>
+      <div id="mission-list" class="mission-list"></div>
+      <div class="consultant-tip"><i data-icon="bulb"></i><div><b>SEDIKIT PERUBAHAN, BESAR DAMPAKNYA.</b><p id="consultant-tip">Mulai dari kursi. Postur yang nyaman menjadi fondasi ruang kerja yang baik.</p></div></div>
+      <button id="submit-project" class="primary-button" disabled><span data-icon="check-circle"></span><span>Selesaikan proyek</span><i data-icon="arrow-right"></i></button>
+      <p class="completion-hint" id="completion-hint">Selesaikan semua misi & raih skor ≥ 80</p>
+    </aside>
+    <div class="scene-caption"><span class="capsule"><i class="live-dot"></i><span id="scene-category">ERGONOMI KANTOR</span></span><span id="scene-area">36 m² <i>·</i> Cahaya pagi</span></div>
+    <aside class="panel score-panel">
+      <div class="eyebrow">SKOR ERGONOMI <i data-icon="activity"></i></div>
+      <div class="score-main"><div class="score-ring"><svg viewBox="0 0 100 100"><circle class="ring-track" cx="50" cy="50" r="43"/><circle id="score-circle" cx="50" cy="50" r="43"/></svg><div><strong id="score">0</strong><span>/ 100</span></div></div><div class="score-verdict"><span id="score-status" class="status-badge">Perlu perbaikan</span><p id="score-feedback">Ruang yang nyaman<br>dimulai dari sini.</p></div></div>
+      <div id="metrics" class="metrics"></div>
+      <div class="score-footer"><span class="live-dot"></span> Diperbarui saat Anda menata</div>
+    </aside>
+    <div id="world-labels" aria-hidden="true"></div>
+    <div id="crosshair"><span></span><i></i></div>
+    <div id="focus-prompt" hidden><span class="keycap">F</span><div><b id="focus-name">Kursi kerja</b><small id="focus-action">Periksa & sesuaikan</small></div></div>
+    <button id="explore-button" class="explore-button"><span data-icon="move"></span>Jelajahi ruangan<span class="keycap">WASD</span></button>
+    <button id="outdoor-button" class="outdoor-button"><span data-icon="home"></span><span id="outdoor-button-label">Ke halaman</span><i data-icon="arrow-right"></i></button>
+    <button id="neighborhood-button" class="outdoor-button neighborhood-button" hidden><span data-icon="outdoor"></span><span>Jelajahi lingkungan<small id="neighborhood-location">Ke gerbang · tekan F untuk membuka</small></span><i data-icon="arrow-right"></i></button>
+    <button id="objects-button" class="objects-button"><span data-icon="box"></span><span>Barang</span></button>
+    <div id="move-hud" hidden><div><b id="move-name">Barang</b><small id="move-status">Cari tempat kosong</small></div><div class="move-actions"><button id="rotate-object" aria-label="Putar barang">Putar <kbd>R</kbd></button><button id="place-object">Letakkan <kbd>F</kbd></button><button id="cancel-object" aria-label="Batalkan pemindahan">Batal <kbd>X</kbd></button></div></div>
+    <div id="carry-hud" hidden><span data-icon="box"></span><div><b>Kotak taman · 5 kg</b><small id="carry-distance">Bawa ke meja taman</small></div><button id="deliver-carry" disabled>Letakkan <kbd>F</kbd></button><button id="cancel-carry" aria-label="Batalkan membawa barang">×</button></div>
+    <div class="career-card"><div class="career-icon" data-icon="badge"></div><div><span>KONSULTAN JUNIOR</span><b id="career-label">Ruang pertama, langkah pertama.</b></div><span class="career-level" id="career-level">LV. 01</span></div>
+    <div class="toolbar-wrap"><div class="toolbar-caption">PERALATAN KONSULTAN</div><nav class="toolbar" aria-label="Peralatan"><button class="tool active" data-tool="inspect" title="1 — Inspeksi"><span data-icon="scan"></span><b>Inspeksi</b><kbd>1</kbd></button><button class="tool" data-tool="adjust" title="2 — Sesuaikan"><span data-icon="sliders"></span><b>Sesuaikan</b><kbd>2</kbd></button><button class="tool" data-tool="clean" title="3 — Bersihkan"><span data-icon="brush"></span><b>Bersihkan</b><kbd>3</kbd></button><button class="tool" data-tool="layout" title="4 — Tata ruang"><span data-icon="layout"></span><b>Tata ruang</b><kbd>4</kbd></button></nav></div>
+    <aside class="panel map-panel"><div class="map-heading"><span>PERJALANAN ANDA</span><button id="map-button" aria-label="Lihat semua proyek"><i data-icon="expand"></i></button></div><div id="room-map" class="room-map"></div><div class="map-legend"><i class="live-dot"></i><span id="map-current">Kantor Fokus</span><small id="map-progress">0 / 5 selesai</small></div></aside>
+    <footer class="control-footer"><div><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Bergerak</span><span><i data-icon="mouse"></i> Lihat sekitar</span><span><kbd>F</kbd> Interaksi</span><span><kbd>Esc</kbd> Menu</span></div><div><button id="menu-button"><i data-icon="clipboard"></i> Menu</button><button id="help-button"><i data-icon="help"></i> Panduan</button><button id="vr-button"><i data-icon="vr"></i> Mode VR</button><span id="fps-indicator">3D · LIVE</span></div></footer>
+    <div id="mobile-controls"><div id="joystick" aria-label="Joystick gerakan"><div id="joystick-thumb"></div><span>GERAK</span></div><span id="mobile-look-hint">Usap kanan untuk melihat</span><button id="mobile-interact" aria-label="Berinteraksi">F</button><button id="mobile-sprint" aria-label="Tahan untuk berlari" aria-pressed="false" hidden><i data-icon="move"></i><span>Lari</span></button><button id="mobile-missions" aria-label="Buka misi"><i data-icon="clipboard"></i></button><button id="mobile-menu" aria-label="Menu permainan"><i data-icon="settings"></i></button><button id="mobile-fullscreen" aria-label="Layar penuh"><i data-icon="expand"></i></button></div>
+  </main>
+  <aside id="inspector" class="panel inspector" hidden><div class="inspector-heading"><span class="eyebrow">INSPEKSI OBJEK</span><button id="close-inspector" class="icon-button" aria-label="Tutup pengaturan objek"><i data-icon="close"></i></button></div><div class="object-heading"><span id="object-icon" class="object-icon"></span><div><small id="object-category">STASIUN KERJA</small><h2 id="object-name">Kursi kerja</h2></div><span id="object-badge" class="status-badge">Perlu diatur</span></div><p id="object-description" class="muted"></p><div id="object-controls"></div><div id="object-feedback" class="object-feedback"></div><div id="model-tools" class="model-tools"><button id="import-model"><i data-icon="box"></i> Impor model</button><small>GLB / glTF + tekstur · maks. 25 MB</small><input id="model-input" type="file" accept=".glb,.gltf,.bin,.png,.jpg,.jpeg,.webp" multiple hidden></div><details class="model-credit-fields"><summary>Sumber & atribusi model</summary><label>Nama kreator<input id="model-author" type="text" maxlength="100" placeholder="Kreator model"></label><label>Tautan sumber<input id="model-source" type="url" maxlength="500" placeholder="https://sketchfab.com/3d-models/…"></label><small id="model-credit">Model impor hanya untuk ruangan aktif. Untuk glTF, pilih berkas .gltf, .bin, dan seluruh tekstur bersama-sama.</small></details><button id="return-explore" class="secondary-button"><i data-icon="move"></i> Kembali menjelajah</button></aside>
+  <div id="toast" role="status" aria-live="polite"><i data-icon="check-circle"></i><span></span></div>
+  <dialog id="modal"><div class="modal-inner"><button id="close-modal" class="icon-button modal-close" aria-label="Tutup dialog"><i data-icon="close"></i></button><div id="modal-content"></div></div></dialog>
+  <section id="orientation-prompt" role="dialog" aria-modal="true" aria-labelledby="orientation-title" hidden><div class="rotate-phone" aria-hidden="true">↻</div><span class="eyebrow">ERGOFLIP · MOBILE</span><h2 id="orientation-title">Putar ponsel Anda</h2><p>Gunakan posisi horizontal agar ruang bermain lebih luas.</p><div class="orientation-controls"><span>Joystick kiri<br><b>Bergerak</b></span><span>Usap kanan<br><b>Lihat sekitar</b></span><span>Tombol kanan<br><b>Interaksi</b></span></div><button id="orientation-fullscreen" class="primary-button">Main layar penuh</button><small id="orientation-message">Aktifkan rotasi otomatis, lalu putar ponsel ke samping.</small></section>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

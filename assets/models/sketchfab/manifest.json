@@ -1,0 +1,113 @@
+{
+  "generatedBy": "scripts/prepare-sketchfab.mjs",
+  "assets": [
+    {
+      "file": "tree-canopy.glb",
+      "original": "realistic_tree.glb",
+      "bytes": 7698388,
+      "triangles": 19921,
+      "sha256": "1b185c5c75a074457b7f2e6a23375bcdcdb2919cdb208fdda97e41a3ef17d402",
+      "author": "Daniel (https://sketchfab.com/danielpetrov)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/realistic-tree-d989c0f801d847b9a74992ec4ddcfdfc",
+      "title": "Realistic Tree",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "tree-garden.glb",
+      "original": "pohon.glb",
+      "bytes": 11693840,
+      "triangles": 108182,
+      "sha256": "33bc76e4dcc1e4fc7fe08f2d25d281613df80ae8d2a78a76a8578fb0b88e4251",
+      "author": "praktikumgkv2022 (https://sketchfab.com/praktikumgkv2022)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pohon-60cee0b63e4742d2a904d63609870621",
+      "title": "Pohon",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "tree-slender.glb",
+      "original": "pohon (1).glb",
+      "bytes": 5206292,
+      "triangles": 70232,
+      "sha256": "14e3f60829f7c783ca5df094ad60630d69dd481f370289b50edf06c153fe5aef",
+      "author": "vikanovia28 (https://sketchfab.com/vikanovia28)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/pohon-794d4122cec24186b00df68859c480d0",
+      "title": "Pohon",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "kitchen-counter.glb",
+      "original": "scene.gltf",
+      "bytes": 219152,
+      "triangles": 232,
+      "sha256": "d707f28897ed5df87dfdc84e2327695dc7d74c28f020815f790705280653431a",
+      "author": "QuarizonStudio (https://sketchfab.com/QuarizonStudio)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-scandinavian-kitchen-island-a9738f4e651b4779acdddcfbb89516f6",
+      "title": "modern scandinavian kitchen island",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "kitchen-oven.glb",
+      "original": "scene.gltf",
+      "bytes": 85148,
+      "triangles": 832,
+      "sha256": "075655f0a3f569ff11337ab88d186a3a66e10d5fd2963d970d3fc80b09db8d25",
+      "author": "QuarizonStudio (https://sketchfab.com/QuarizonStudio)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-scandinavian-kitchen-island-a9738f4e651b4779acdddcfbb89516f6",
+      "title": "modern scandinavian kitchen island",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "kitchen-pendants.glb",
+      "original": "scene.gltf",
+      "bytes": 162620,
+      "triangles": 2684,
+      "sha256": "ff68011d86f4fb0979b8a5209a86bff9a56df51ca61182bd1819cf64b477038d",
+      "author": "QuarizonStudio (https://sketchfab.com/QuarizonStudio)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-scandinavian-kitchen-island-a9738f4e651b4779acdddcfbb89516f6",
+      "title": "modern scandinavian kitchen island",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "apartment-fridge.glb",
+      "original": "modern_apartment.glb",
+      "bytes": 1582464,
+      "triangles": 19237,
+      "sha256": "838fdcc4e75ac853d12289718b14ff6ee1ca7c18ce2e24f3cc5d5cb69897a5b6",
+      "author": "Visthétique (https://sketchfab.com/visthetique)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-apartment-1fbb649cd6624f2bb7b7d6e30c6533a5",
+      "title": "Modern Apartment",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "apartment-sofa.glb",
+      "original": "modern_apartment.glb",
+      "bytes": 1481016,
+      "triangles": 36754,
+      "sha256": "fb29abb4b94b6beb408c86619219f9487042ab4cc0c523b4f5e6c3d0e92f7360",
+      "author": "Visthétique (https://sketchfab.com/visthetique)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-apartment-1fbb649cd6624f2bb7b7d6e30c6533a5",
+      "title": "Modern Apartment",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    },
+    {
+      "file": "apartment-coffee.glb",
+      "original": "modern_apartment.glb",
+      "bytes": 506516,
+      "triangles": 5584,
+      "sha256": "6e7435d76e854a588b49da4738a2cc966d9453a024b7c25d893a8223fb2a374d",
+      "author": "Visthétique (https://sketchfab.com/visthetique)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/modern-apartment-1fbb649cd6624f2bb7b7d6e30c6533a5",
+      "title": "Modern Apartment",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    }
+  ]
+}

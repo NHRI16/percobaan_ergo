@@ -1,0 +1,17 @@
+{
+  "generatedBy": "scripts/prepare-sketchfab.mjs --hands",
+  "assets": [
+    {
+      "file": "female-hand.glb",
+      "original": "female_hand.glb",
+      "bytes": 2115036,
+      "triangles": 8082,
+      "sha256": "cb10d489a10d0b2e68f1717d66fd9e9b96c1dc8cced654ede66069015fc386d1",
+      "author": "deep3dstudio (https://sketchfab.com/deep3dstudio)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/female-hand-3e9b8ad1942048e3a267d92fb1124d46",
+      "title": "Female hand",
+      "modifications": "Selected scene parts; texture resizing; legacy foliage materials adapted to metallic-roughness."
+    }
+  ]
+}
