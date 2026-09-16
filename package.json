@@ -10,7 +10,8 @@
     "test": "node --test tests/rules.test.js tests/hand-rig.test.js",
     "test:e2e": "playwright test",
     "assets:hand-textures": "node scripts/prepare-sketchfab.mjs --hands",
-    "assets:hand-rig": "node scripts/prepare-hand-rig.mjs"
+    "assets:hand-rig": "node scripts/prepare-hand-rig.mjs",
+    "postinstall": "git lfs install && git lfs pull",
   },
   "engines": {
     "node": ">=20"
