@@ -5,8 +5,8 @@
   "description": "Simulasi edukasi ergonomi 3D: tutorial interaktif, rumah dan halaman, kontrol FPS, mobile, dan WebXR",
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
-    "start": "node server.js",
+    "dev": "node scripts/server.js",
+    "start": "node scripts/server.js",
     "assets:prepare": "node scripts/prepare-sketchfab.mjs",
     "test": "node --test tests/rules.test.js tests/hand-rig.test.js",
     "test:e2e": "playwright test",
