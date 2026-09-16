@@ -1,0 +1,73 @@
+{
+  "checked": "2026-09-14",
+  "status": "catalog-only; model downloads not bundled",
+  "downloadInstructions": "Download legally using your own Sketchfab login. Official API requires authenticated user; import a downloaded GLB through the game. Retain author/source/license attribution when redistributing.",
+  "officialDownloadDocumentation": "https://sketchfab.com/developers/download-api/downloading-models",
+  "models": [
+    {
+      "object": "desk",
+      "title": "Modern Office Desk",
+      "author": "Visthétique (@visthetique)",
+      "source": "https://sketchfab.com/3d-models/modern-office-desk-a960cf40826849f2adc0f262203f8d41",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 2600
+    },
+    {
+      "object": "chair",
+      "title": "Office Chair Modern",
+      "author": "thethieme",
+      "source": "https://sketchfab.com/3d-models/office-chair-modern-675f34f7304e4d92812a41e9750539aa",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 1200
+    },
+    {
+      "object": "monitor",
+      "title": "Computer Monitor Lowpoly Model",
+      "author": "Marco Zakaria (@marcoZakaria)",
+      "source": "https://sketchfab.com/3d-models/computer-monitor-lowpoly-model-1d4ee42eda804b02b05b63721921c1d7",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 1000
+    },
+    {
+      "object": "lamp",
+      "title": "Desk lamp",
+      "author": "KaramellGlass (@BlueHour)",
+      "source": "https://sketchfab.com/3d-models/desk-lamp-7377ec591df04445a1aae370017aaa13",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 31300
+    },
+    {
+      "object": "fridge",
+      "title": "Refrigerator (low-poly)",
+      "author": "Vladimir_Sofyanov (@vladimirsoufl)",
+      "source": "https://sketchfab.com/3d-models/refrigerator-low-poly-1b0d689a926244e9a72b50e25c7e2a45",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 2400
+    },
+    {
+      "object": "sink",
+      "title": "Kitchen Sink",
+      "author": "Helindu",
+      "source": "https://sketchfab.com/3d-models/kitchen-sink-c5636343a43d48758325e8890035c872",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 13900
+    },
+    {
+      "object": "broom",
+      "title": "Broom",
+      "author": "KargaEntiti",
+      "source": "https://sketchfab.com/3d-models/broom-470d46e70e934e76a9fe7df8c56197f5",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 31600
+    },
+    {
+      "object": "garden-bench",
+      "title": "Garden bench bed",
+      "author": "Stereocat (@andrey.giun)",
+      "source": "https://sketchfab.com/3d-models/garden-bench-bed-ac96ccb2cf6442d980018ea0fe808409",
+      "licenseLabelOnSource": "CC Attribution",
+      "trianglesApprox": 59800,
+      "note": "Higher polygon count; simplify before using on mobile."
+    }
+  ]
+}

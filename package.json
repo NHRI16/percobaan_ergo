@@ -1,0 +1,24 @@
+{
+  "name": "ergoflip-home-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulasi edukasi ergonomi 3D: tutorial interaktif, rumah dan halaman, kontrol FPS, mobile, dan WebXR",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/server.js",
+    "assets:prepare": "node scripts/prepare-sketchfab.mjs",
+    "test": "node --test tests/rules.test.js tests/hand-rig.test.js",
+    "test:e2e": "playwright test",
+    "assets:hand-textures": "node scripts/prepare-sketchfab.mjs --hands",
+    "assets:hand-rig": "node scripts/prepare-hand-rig.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

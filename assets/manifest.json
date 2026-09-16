@@ -1,0 +1,149 @@
+{
+  "generated": "2026-09-14T11:50:39.980Z",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "path": "textures/wood_floor/wood_floor_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_diff_1k.jpg",
+      "bytes": 734493,
+      "md5": "b7e927d2bf2f8f103820ff3890c8407c",
+      "sha256": "2a1c07687b6dbb214c4b9213739c6d92d425f1f0fc8ab3ac157f105d78240789",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "author": "Dimitrios Savva",
+      "license": "CC0-1.0",
+      "channel": "Diffuse"
+    },
+    {
+      "path": "textures/wood_floor/wood_floor_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_nor_gl_1k.jpg",
+      "bytes": 423303,
+      "md5": "620f174d2c09b579c5d02d37b2106668",
+      "sha256": "452247f0d0d1b7fc7f8324ff3b6ed60bcc6de1405f4284eeb8d9bce90d4939c2",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "author": "Dimitrios Savva",
+      "license": "CC0-1.0",
+      "channel": "nor_gl"
+    },
+    {
+      "path": "textures/wood_floor/wood_floor_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_floor/wood_floor_rough_1k.jpg",
+      "bytes": 527754,
+      "md5": "36146634f1dbd1bc30cd071857584c10",
+      "sha256": "061f1e1293251b2d28c76e3fac1ea9452b0e8648bb8f9b3728e09db386166e5c",
+      "source": "https://polyhaven.com/a/wood_floor",
+      "author": "Dimitrios Savva",
+      "license": "CC0-1.0",
+      "channel": "Rough"
+    },
+    {
+      "path": "textures/leafy_grass/leafy_grass_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_diff_1k.jpg",
+      "bytes": 1195394,
+      "md5": "0dbc071e91d6905edfcfbe8eb785a1ab",
+      "sha256": "cfa40bc9d9417d1852db8753a8d5917f110c40101179f63543c382e39bc05e4a",
+      "source": "https://polyhaven.com/a/leafy_grass",
+      "author": "Charlotte Baglioni",
+      "license": "CC0-1.0",
+      "channel": "Diffuse"
+    },
+    {
+      "path": "textures/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+      "bytes": 1466049,
+      "md5": "8279e096e204ea326d57a318869f99df",
+      "sha256": "832328216adc0a7e1f70a31d5ee48c9ab7f2152d83816122736cf42ac4b2ebd6",
+      "source": "https://polyhaven.com/a/leafy_grass",
+      "author": "Charlotte Baglioni",
+      "license": "CC0-1.0",
+      "channel": "nor_gl"
+    },
+    {
+      "path": "textures/leafy_grass/leafy_grass_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_rough_1k.jpg",
+      "bytes": 511385,
+      "md5": "05f6bb1383e12b327727d313c5899cf2",
+      "sha256": "0c2a1d91aacb8e54a496051b59854e51e456fe858abeade778e308359ef16463",
+      "source": "https://polyhaven.com/a/leafy_grass",
+      "author": "Charlotte Baglioni",
+      "license": "CC0-1.0",
+      "channel": "Rough"
+    },
+    {
+      "path": "textures/plaster_grey_04/plaster_grey_04_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plaster_grey_04/plaster_grey_04_diff_1k.jpg",
+      "bytes": 456938,
+      "md5": "bc8a1530a637d36865f90c86391c75c4",
+      "sha256": "e78df7d6e762fe767634278e14316564e0d4510031986239458994ec9fc5410d",
+      "source": "https://polyhaven.com/a/plaster_grey_04",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "channel": "Diffuse"
+    },
+    {
+      "path": "textures/plaster_grey_04/plaster_grey_04_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plaster_grey_04/plaster_grey_04_nor_gl_1k.jpg",
+      "bytes": 983244,
+      "md5": "d1ada132c3eea7bee3abe7624c592391",
+      "sha256": "9d0eb5299f797c07eb841737eb7164755a2c8a2363540e175a76188a2aa5a2dc",
+      "source": "https://polyhaven.com/a/plaster_grey_04",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "channel": "nor_gl"
+    },
+    {
+      "path": "textures/plaster_grey_04/plaster_grey_04_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/plaster_grey_04/plaster_grey_04_rough_1k.jpg",
+      "bytes": 370366,
+      "md5": "ef0f4120c0b1085db4f6a08f7a0b197d",
+      "sha256": "0d8cc6216ac3dc9dc4339cb17a08d249f7341961f432ae1451c35cdff222869b",
+      "source": "https://polyhaven.com/a/plaster_grey_04",
+      "author": "Rob Tuytel",
+      "license": "CC0-1.0",
+      "channel": "Rough"
+    },
+    {
+      "path": "textures/concrete_floor_worn_001/concrete_floor_worn_001_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_diff_1k.jpg",
+      "bytes": 118806,
+      "md5": "e35597cca586150b1ab2aa9a331a39c5",
+      "sha256": "6e40c0fc908f4d66431836f5abe203f3a4eb064e88824378a91a46a26e2f464c",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva and Rico Cilliers",
+      "license": "CC0-1.0",
+      "channel": "Diffuse"
+    },
+    {
+      "path": "textures/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_1k.jpg",
+      "bytes": 110906,
+      "md5": "9de6626758f8793b71182b892c110827",
+      "sha256": "523bd94a1be5dd2f11c2ae2b7d7c77445cf5bd9e41604db515a7c8364dcba067",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva and Rico Cilliers",
+      "license": "CC0-1.0",
+      "channel": "nor_gl"
+    },
+    {
+      "path": "textures/concrete_floor_worn_001/concrete_floor_worn_001_rough_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_rough_1k.jpg",
+      "bytes": 181942,
+      "md5": "b158eae73029ac6a849481274a0e1b35",
+      "sha256": "069efe4ca018e0ef61fd8cc9964395ba8272284ae239da68d7f87988e2e9f488",
+      "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+      "author": "Dimitrios Savva and Rico Cilliers",
+      "license": "CC0-1.0",
+      "channel": "Rough"
+    },
+    {
+      "path": "models/sheen-chair.glb",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/SheenChair/glTF-Binary/SheenChair.glb",
+      "bytes": 4125648,
+      "md5": "95ad375f38154952e3b94e6a8c186bc0",
+      "sha256": "f0af2a2b102d28d540236306ae19f8fb36842df76bd38cf76f063f9bd2853399",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/SheenChair",
+      "author": "Eric Chadwick / Wayfair LLC (2020)",
+      "license": "CC0-1.0",
+      "channel": "model"
+    }
+  ]
+}
