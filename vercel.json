@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/assets/models/(.*\\.glb)",
+      "destination": "https://media.githubusercontent.com/media/NHRI16/percobaan_ergo/master/assets/models/$1",
+      "permanent": false
+    }
+  ]
 }
